@@ -1,5 +1,6 @@
 # worksnoah.github.io
-Noah Works \n
+Noah Works
+
 Welcome to Noah Works! I’m Noah, and I’m excited to share my engineering projects with you. My focus is on mechanical engineering and 3D printing, and I’m passionate about designing innovative solutions and exploring new technologies. Here, you’ll find projects related to designing 3D printers, working with microcontrollers, CAD designs, and more. I hope you find something that inspires you!
 
 🚀 About Me
