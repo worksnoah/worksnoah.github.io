@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="final_project.html">Final Project</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section>
+            <h1>Final Project</h1>
+            <p>For my final project, I have chosen to explore [brief description of the problem you're addressing].</p>
+            <ul>
+                <li><a href="#">Component 2: Problem Validation</a></li>
+                <li><a href="#">Component 3: Solution Design</a></li>
+                <li><a href="#">Component 4: Prototyping and Testing</a></li>
+                <li><a href="#">Component 5: Project and Process Evaluation</a></li>
+                <li><a href="#">Component 6: Design Presentation</a></li>
+            </ul>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 My Portfolio</p>
+    </footer>
+</body>
+</html>
