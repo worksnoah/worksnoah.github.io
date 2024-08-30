@@ -60,7 +60,7 @@ header h1 {
 /* Grid item styling for circuit board look */
 .grid-item {
     background-color: #111;
-    border: 2px solid #00ff99;
+    border: 2px solid #ff00ea;
     padding: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
@@ -94,25 +94,25 @@ header h1 {
 /* Glow effect on hover */
 .grid-item:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 20px #00ff99, 0 0 30px #ff00ff;
+    box-shadow: 0 0 20px #8400ff, 0 0 30px #035199;
     border-color: #ff00ff;
 }
 
 .grid-item a {
     text-decoration: none;
-    color: #00ff99;
+    color: #0db89b;
     font-size: 1.2em;
     display: block;
 }
 
 .grid-item a:hover {
-    color: #ff00ff;
+    color: #0c85a3;
 }
 
 /* Footer styling */
 footer {
     background-color: #222;
-    color: #00ff99;
+    color: #6318dd;
     padding: 10px 0;
     position: fixed;
     bottom: 0;
