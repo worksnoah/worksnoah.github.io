@@ -1,6 +1,6 @@
 /* Body styling with a background image */
 body {
-    font-family: 'Courier New', monospace;
+    font-family: 'Hacklife', monospace;
     background: url('images/Background.png') no-repeat center center fixed;
     background-size: cover; /* Ensures the image covers the whole page */
     color: #00ffea;
@@ -28,7 +28,7 @@ nav ul li a {
     color: #9900ff;
     text-decoration: none;
     padding: 10px;
-    border: 1px solid #00ffff;
+    border: 4px solid #00ffff;
     transition: background-color 0.3s ease;
 }
 
@@ -69,14 +69,14 @@ header h1 {
 
 .grid-item a {
     text-decoration: none;
-    color: #00ff99;
+    color: #00eeff;
     font-size: 1.2em;
     display: block;
 }
 
 .grid-item:hover {
     transform: scale(1.1);
-    box-shadow: 0 0 15px #00ff99;
+    box-shadow: 0 0 15px #00fff2;
     border-color: #ff00ff;
 }
 
