@@ -1,7 +1,7 @@
 /* Body styling with a background image */
 body {
     font-family: 'Hacklife', monospace;
-    background: url('images/Background.png') no-repeat center center fixed;
+    background: url('images/Background.jpg') no-repeat center center fixed;
     background-size: cover; /* Ensures the image covers the whole page */
     color: #00ffea;
     margin: 0;
