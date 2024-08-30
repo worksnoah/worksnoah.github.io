@@ -1,15 +1,16 @@
-/* Base styling remains unchanged */
+/* Base styling */
 body {
-    font-family: 'Courier New', monospace;
-    background: url('images/Background.jpg') no-repeat center center fixed;
+    font-family: 'Proto Mono', monospace;
+    background: url('images/background.jpg') no-repeat center center fixed;
     background-size: cover;
-    color: #00ffff;
+    color: #a200ff;
     margin: 0;
     padding: 0;
     text-align: center;
+    position: relative;
 }
 
-/* Navigation styling remains unchanged */
+/* Navigation styling */
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -24,19 +25,19 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #00ffff;
+    color: #b700ff;
     text-decoration: none;
     padding: 10px;
-    border: 1px solid #8c00ff;
+    border: 1px solid #9900ff;
     transition: background-color 0.3s ease;
 }
 
 nav ul li a:hover {
-    background-color: #00f7ff;
+    background-color: #00eeff;
     color: #0d0d0d;
 }
 
-/* Header styling remains unchanged */
+/* Header styling */
 header {
     margin: 20px 0;
 }
@@ -44,10 +45,10 @@ header {
 header h1 {
     font-size: 3em;
     color: #ff00ff;
-    text-shadow: 0 0 10px #a200ff;
+    text-shadow: 0 0 10px #ff00ff;
 }
 
-/* Grid container styling remains unchanged */
+/* Grid container styling */
 .grid-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -57,131 +58,64 @@ header h1 {
     margin: auto;
 }
 
-/* Grid item styling updated for different computer components */
+/* Grid item styling for circuit board look */
 .grid-item {
     background-color: #111;
-    border: 2px solid #ff00ea;
+    border: 2px solid #00eeff;
     padding: 20px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
+    border-radius: 12px; /* Rounded corners for circuit look */
     position: relative;
     overflow: hidden;
+    box-shadow: inset 0 0 20px rgba(116, 250, 255, 0.5), 0 0 15px #ea00ff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* CPU shape: square with circuit-like connectors */
-.grid-item.cpu {
-    border-radius: 10px;
-}
-
-.grid-item.cpu::before, .grid-item.cpu::after {
+.grid-item::before, .grid-item::after {
     content: '';
     position: absolute;
     width: 25px;
     height: 25px;
-    background-color: #8400ff;
+    background-color: #00d9ff;
     border-radius: 50%;
     z-index: -1;
 }
 
-.grid-item.cpu::before {
+/* Position circles to resemble circuit board connectors */
+.grid-item::before {
     top: -10px;
     left: 50%;
     transform: translateX(-50%);
 }
 
-.grid-item.cpu::after {
+.grid-item::after {
     bottom: -10px;
     left: 50%;
     transform: translateX(-50%);
 }
 
-/* GPU shape: rectangular with a gradient representing a heat sink */
-.grid-item.gpu {
-    border-radius: 0;
-    background: linear-gradient(135deg, #111, #333);
-    height: 100px;
-    box-shadow: inset 0 0 10px #ff00ea;
-}
-
-/* RAM stick shape: slim horizontal rectangle */
-.grid-item.ram {
-    border-radius: 5px;
-    width: 80%;
-    margin: auto;
-    height: 60px;
-    border: 2px dashed #00ffff;
-}
-
-/* Motherboard shape: square with a grid-like pattern */
-.grid-item.motherboard {
-    border-radius: 5px;
-    background: repeating-linear-gradient(
-        45deg,
-        #111,
-        #111 10px,
-        #222 10px,
-        #222 20px
-    );
-}
-
-/* Hard Drive shape: rounded rectangle */
-.grid-item.hdd {
-    border-radius: 20px;
-    width: 70%;
-    margin: auto;
-    height: 120px;
-    box-shadow: inset 0 0 10px #035199;
-}
-
-/* Power Supply shape: square with vents */
-.grid-item.psu {
-    border-radius: 5px;
-    background: radial-gradient(circle, #111 30%, #333 70%);
-    border: 2px solid #6318dd;
-}
-
-/* Cooling Fan shape: circular with fan blades */
-.grid-item.fan {
-    border-radius: 50%;
-    background-color: #111;
-    position: relative;
-}
-
-.grid-item.fan::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 60%;
-    height: 60%;
-    background-color: #0c85a3;
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-    clip-path: polygon(50% 0%, 60% 50%, 100% 100%, 40% 100%);
-}
-
-/* Hover effects */
+/* Glow effect on hover */
 .grid-item:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 20px #8400ff, 0 0 30px #035199;
+    box-shadow: 0 0 20px #8c00ff, 0 0 30px #ff00ff;
     border-color: #ff00ff;
 }
 
 .grid-item a {
     text-decoration: none;
-    color: #0db89b;
+    color: #003cff;
     font-size: 1.2em;
     display: block;
 }
 
 .grid-item a:hover {
-    color: #0c85a3;
+    color: #ff00ff;
 }
 
-/* Footer styling remains unchanged */
+/* Footer styling */
 footer {
     background-color: #222;
-    color: #6318dd;
+    color: #8400ff;
     padding: 10px 0;
     position: fixed;
     bottom: 0;
