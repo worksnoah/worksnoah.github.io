@@ -1,9 +1,9 @@
 /* Base styling */
 body {
     font-family: 'Courier New', monospace;
-    background: url('images/background.jpg') no-repeat center center fixed;
+    background: url('images/Background.jpg') no-repeat center center fixed;
     background-size: cover;
-    color: #00ff99;
+    color: #00ffff;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -24,15 +24,15 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #00ff99;
+    color: #00ffff;
     text-decoration: none;
     padding: 10px;
-    border: 1px solid #00ff99;
+    border: 1px solid #8c00ff;
     transition: background-color 0.3s ease;
 }
 
 nav ul li a:hover {
-    background-color: #00ff99;
+    background-color: #00f7ff;
     color: #0d0d0d;
 }
 
@@ -44,7 +44,7 @@ header {
 header h1 {
     font-size: 3em;
     color: #ff00ff;
-    text-shadow: 0 0 10px #ff00ff;
+    text-shadow: 0 0 10px #a200ff;
 }
 
 /* Grid container styling */
@@ -74,7 +74,7 @@ header h1 {
     position: absolute;
     width: 25px;
     height: 25px;
-    background-color: #00ff99;
+    background-color: #8400ff;
     border-radius: 50%;
 }
 
