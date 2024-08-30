@@ -1,4 +1,4 @@
-/* Base styling */
+/* Base styling remains unchanged */
 body {
     font-family: 'Courier New', monospace;
     background: url('images/Background.jpg') no-repeat center center fixed;
@@ -9,7 +9,7 @@ body {
     text-align: center;
 }
 
-/* Navigation styling */
+/* Navigation styling remains unchanged */
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -36,7 +36,7 @@ nav ul li a:hover {
     color: #0d0d0d;
 }
 
-/* Header styling */
+/* Header styling remains unchanged */
 header {
     margin: 20px 0;
 }
@@ -47,51 +47,120 @@ header h1 {
     text-shadow: 0 0 10px #a200ff;
 }
 
-/* Grid container styling */
+/* Grid container styling remains unchanged */
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columns layout */
+    grid-template-columns: repeat(4, 1fr);
     gap: 15px;
     padding: 30px;
     max-width: 1200px;
     margin: auto;
 }
 
-/* Grid item styling for circuit board look */
+/* Grid item styling updated for different computer components */
 .grid-item {
     background-color: #111;
     border: 2px solid #ff00ea;
     padding: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
-    border-radius: 15px; /* Rounded corners for circuit look */
     position: relative;
     overflow: hidden;
 }
 
-.grid-item::before, .grid-item::after {
+/* CPU shape: square with circuit-like connectors */
+.grid-item.cpu {
+    border-radius: 10px;
+}
+
+.grid-item.cpu::before, .grid-item.cpu::after {
     content: '';
     position: absolute;
     width: 25px;
     height: 25px;
     background-color: #8400ff;
     border-radius: 50%;
+    z-index: -1;
 }
 
-/* Position circles to resemble circuit board connectors */
-.grid-item::before {
+.grid-item.cpu::before {
     top: -10px;
     left: 50%;
     transform: translateX(-50%);
 }
 
-.grid-item::after {
+.grid-item.cpu::after {
     bottom: -10px;
     left: 50%;
     transform: translateX(-50%);
 }
 
-/* Glow effect on hover */
+/* GPU shape: rectangular with a gradient representing a heat sink */
+.grid-item.gpu {
+    border-radius: 0;
+    background: linear-gradient(135deg, #111, #333);
+    height: 100px;
+    box-shadow: inset 0 0 10px #ff00ea;
+}
+
+/* RAM stick shape: slim horizontal rectangle */
+.grid-item.ram {
+    border-radius: 5px;
+    width: 80%;
+    margin: auto;
+    height: 60px;
+    border: 2px dashed #00ffff;
+}
+
+/* Motherboard shape: square with a grid-like pattern */
+.grid-item.motherboard {
+    border-radius: 5px;
+    background: repeating-linear-gradient(
+        45deg,
+        #111,
+        #111 10px,
+        #222 10px,
+        #222 20px
+    );
+}
+
+/* Hard Drive shape: rounded rectangle */
+.grid-item.hdd {
+    border-radius: 20px;
+    width: 70%;
+    margin: auto;
+    height: 120px;
+    box-shadow: inset 0 0 10px #035199;
+}
+
+/* Power Supply shape: square with vents */
+.grid-item.psu {
+    border-radius: 5px;
+    background: radial-gradient(circle, #111 30%, #333 70%);
+    border: 2px solid #6318dd;
+}
+
+/* Cooling Fan shape: circular with fan blades */
+.grid-item.fan {
+    border-radius: 50%;
+    background-color: #111;
+    position: relative;
+}
+
+.grid-item.fan::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    height: 60%;
+    background-color: #0c85a3;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    clip-path: polygon(50% 0%, 60% 50%, 100% 100%, 40% 100%);
+}
+
+/* Hover effects */
 .grid-item:hover {
     transform: scale(1.05);
     box-shadow: 0 0 20px #8400ff, 0 0 30px #035199;
@@ -109,7 +178,7 @@ header h1 {
     color: #0c85a3;
 }
 
-/* Footer styling */
+/* Footer styling remains unchanged */
 footer {
     background-color: #222;
     color: #6318dd;
