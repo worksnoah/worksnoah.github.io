@@ -1,0 +1,94 @@
+/* Base styling */
+body {
+    font-family: 'Courier New', monospace;
+    background-color: #0d0d0d;
+    color: #00ff99;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Navigation styling */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #00ff99;
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid #00ff99;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #00ff99;
+    color: #0d0d0d;
+}
+
+/* Header styling */
+header {
+    margin: 20px 0;
+}
+
+header h1 {
+    font-size: 3em;
+    color: #ff00ff;
+    text-shadow: 0 0 10px #ff00ff;
+}
+
+/* Grid container styling */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+    padding: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Grid item styling */
+.grid-item {
+    background-color: #111;
+    border: 2px solid #00ff99;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.grid-item a {
+    text-decoration: none;
+    color: #00ff99;
+    font-size: 1.2em;
+    display: block;
+}
+
+.grid-item:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #00ff99;
+    border-color: #ff00ff;
+}
+
+.grid-item a:hover {
+    color: #ff00ff;
+}
+
+/* Footer styling */
+footer {
+    background-color: #222;
+    color: #00ff99;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+}
