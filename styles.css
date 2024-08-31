@@ -124,7 +124,7 @@ footer {
 }
 
 body {
-    cursor: url('images/cyberpunk-cursor.png') 8 8, auto; /* Defines the custom cursor with a hot spot */
+    cursor: url('images/cursor.png') 8 8, auto; /* Defines the custom cursor with a hot spot */
 }
 
 
