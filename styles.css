@@ -123,10 +123,10 @@ footer {
     left: 0;
 }
 
-/* Custom cursor styling */
 body {
-    cursor: url('images/cursor.png'), auto;
+    cursor: url('images/cyberpunk-cursor.png') 8 8, auto; /* Defines the custom cursor with a hot spot */
 }
+
 
 .glitch {
     color: #ff00ff;
