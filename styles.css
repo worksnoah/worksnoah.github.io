@@ -123,6 +123,11 @@ footer {
     left: 0;
 }
 
+/* Custom cursor styling */
+body {
+    cursor: url('images/cursor.png'), auto;
+}
+
 .glitch {
     color: #ff00ff;
     position: relative;
