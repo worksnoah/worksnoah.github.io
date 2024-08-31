@@ -30,6 +30,7 @@ nav ul li a {
     padding: 10px;
     border: 1px solid #9900ff;
     transition: background-color 0.3s ease;
+    cursor: url('images/cursor.png') 8 8, auto; /* Defines the custom cursor with a hot spot */
 }
 
 nav ul li a:hover {
