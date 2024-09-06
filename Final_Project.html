@@ -3,32 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Problem Statement</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Final Project</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the existing CSS file -->
+    <style>
+        /* Additional styles for hiding sections */
+        .component-section {
+            display: none; /* Hide all sections by default */
+        }
+    </style>
 </head>
 <body>
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Me</a></li>
-            <li><a href="Final_Project.html">Final Project</a></li> <!-- Updated link -->
+            <li><a href="final_project.html">Final Project</a></li>
         </ul>
     </nav>
 
     <header>
-        <h1>Problem Statement</h1>
+        <h1>Final Project</h1>
     </header>
 
     <main>
+        <!-- Problem Statement Section -->
         <section>
             <h2>Problem Statement</h2>
-            <p>"Each year, hundreds of vessels go missing in remote areas without access to communication or the internet. This lack of reliable information sources in critical situations can lead to an increase in the risk of loss of life and property due to longer rescue times.</p>
-            <!-- Add more content as needed -->
+            <p>
+                Write a detailed description of the problem you are trying to solve for your final project. Explain the context, why it's important, and what challenges you aim to address.
+            </p>
+        </section>
+
+        <!-- Links to Subsections for Final Project -->
+        <section>
+            <h2>Project Components</h2>
+            <ul>
+                <li><a href="#" onclick="showSection('problem-validation')">Component 2: Problem Validation</a></li>
+                <li><a href="#" onclick="showSection('solution-design')">Component 3: Solution Design</a></li>
+                <li><a href="#" onclick="showSection('prototyping-testing')">Component 4: Prototyping and Testing</a></li>
+                <li><a href="#" onclick="showSection('evaluation')">Component 5: Project and Process Evaluation</a></li>
+                <li><a href="#" onclick="showSection('design-presentation')">Component 6: Design Presentation</a></li>
+            </ul>
+        </section>
+
+        <!-- Dynamic Content Sections -->
+        <section id="problem-validation" class="component-section">
+            <h3>Component 2: Problem Validation</h3>
+            <p>
+                Describe how you validated the problem, including any research, surveys, or feedback gathered to support the need for your project.
+            </p>
+        </section>
+
+        <section id="solution-design" class="component-section">
+            <h3>Component 3: Solution Design</h3>
+            <p>
+                Outline your solution design, including sketches, diagrams, or any conceptual ideas. Explain the rationale behind your chosen solution.
+            </p>
+        </section>
+
+        <section id="prototyping-testing" class="component-section">
+            <h3>Component 4: Prototyping and Testing</h3>
+            <p>
+                Provide details about your prototyping and testing process, including materials used, iterations, and tests conducted.
+            </p>
+        </section>
+
+        <section id="evaluation" class="component-section">
+            <h3>Component 5: Project and Process Evaluation</h3>
+            <p>
+                Evaluate your project's overall effectiveness, discussing what worked well, what didn’t, and what could be improved.
+            </p>
+        </section>
+
+        <section id="design-presentation" class="component-section">
+            <h3>Component 6: Design Presentation</h3>
+            <p>
+                Present your final design, including visuals, images, or videos that explain the outcome of your project.
+            </p>
         </section>
     </main>
 
     <footer>
         <p>&copy; 2024 My Portfolio</p>
     </footer>
+
+    <!-- JavaScript for Toggling Sections -->
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            var sections = document.getElementsByClassName('component-section');
+            for (var i = 0; i < sections.length; i++) {
+                sections[i].style.display = 'none';
+            }
+
+            // Show the selected section
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
 </body>
 </html>
