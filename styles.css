@@ -1,9 +1,9 @@
 /* Base styling */
 body {
-    font-family: 'Proto Mono', monospace;
+    font-family: 'ethnocentric', monospace;
     background: url('images/Background.jpg') no-repeat center center fixed;
     background-size: cover;
-    color: #a200ff;
+    color: #ff00f2;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -48,7 +48,7 @@ nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    background-color: rgba(34, 34, 34, 0.8);
+    background-color: rgba(16, 0, 106, 0.8);
     display: flex;
     justify-content: center;
 }
@@ -58,7 +58,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #b700ff;
+    color: #00ddff;
     text-decoration: none;
     padding: 10px;
     border: 1px solid #9900ff;
@@ -188,7 +188,7 @@ body {
 }
 
 .about-image {
-    width: 150px; /* Set a smaller width for the image */
+    width: 250px; /* Set a smaller width for the image */
     height: auto;
     border-radius: 10px;
     margin-right: 20px; /* Space between the image and text */
