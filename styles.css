@@ -1,9 +1,9 @@
 /* Base styling */
 body {
-    font-family: 'ethnocentric', monospace;
+    font-family: 'roboto', monospace;
     background: url('images/Background.jpg') no-repeat center center fixed;
     background-size: cover;
-    color: #ff00f2;
+    color: #ff65f7;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -126,6 +126,12 @@ header h1 {
     bottom: -10px;
     left: 50%;
     transform: translateX(-50%);
+}
+
+/* Additional styles for the Problem Validation section */
+#problem-validation p {
+    text-align: left;
+    margin: 0 0 10px 0; /* Adjust margin as needed */
 }
 
 /* Glow effect on hover */
