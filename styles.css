@@ -8,7 +8,9 @@ body {
     padding: 0;
     text-align: center;
     position: relative;
+    cursor: url('images/cursor.png') 2 2, auto; /* Defines the custom cursor with a hot spot */
 }
+
 /* Dropdown menu styling */
 .dropdown-content {
     display: none; /* Hide the dropdown by default */
@@ -32,7 +34,7 @@ body {
 .dropdown-content a:hover {
     background-color: #00f7ff;
     color: #0d0d0d;
-}d
+}
 
 /* Show the dropdown content on hover */
 .dropdown:hover .dropdown-content {
@@ -43,6 +45,7 @@ body {
     background-color: #00f7ff;
     color: #0d0d0d;
 }
+
 /* Navigation styling */
 nav ul {
     list-style-type: none;
@@ -156,18 +159,17 @@ header h1 {
 footer {
     background-color: #222;
     color: #8400ff;
-    padding: 10px 0;
+    height: 50px; /* Adjust the height to your preference */
+    padding: 10px; /* Reduce padding to shrink the size */
+    font-size: 12px; /* Adjust font size to make the text smaller */
+    text-align: center;
     position: fixed;
     bottom: 0;
     width: 100%;
     left: 0;
 }
 
-body {
-    cursor: url('images/cursor.png') 2 2, auto; /* Defines the custom cursor with a hot spot */
-}
-
-
+/* Other styling remains unchanged */
 .glitch {
     color: #ff00ff;
     position: relative;
