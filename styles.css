@@ -159,7 +159,7 @@ header h1 {
 footer {
     background-color: #222;
     color: #8400ff;
-    height: 50px; /* Adjust the height to your preference */
+    height: 25px; /* Adjust the height to your preference */
     padding: 10px; /* Reduce padding to shrink the size */
     font-size: 12px; /* Adjust font size to make the text smaller */
     text-align: center;
