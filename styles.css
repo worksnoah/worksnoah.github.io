@@ -29,14 +29,14 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #c300ff;
+    color: #ffd700;
     font-weight: bold;
     font-size: 1.2em;
     transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #c300ff;
+    color: #ffd700;
 }
 
 /* Hero Section */
@@ -105,8 +105,8 @@ nav ul li a:hover {
 
 /* Image in About Section */
 .about-pic {
-    width: 120px; /* Shrink the image */
-    border-radius: 50%; /* Optional: keep it round */
+    width: 30px; /* Shrink the image */
+    border-radius: 25%; /* Optional: keep it round */
     margin-bottom: 20px;
 }
 /* Skills Section */
