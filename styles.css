@@ -110,6 +110,7 @@ nav ul li a:hover {
     margin-bottom: 20px;
 }
 /* Skills Section */
+/* Skills Section */
 .skills {
     padding: 50px;
     background-color: #0b0b0d;
@@ -135,13 +136,19 @@ nav ul li a:hover {
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; /* This centers the icons and text horizontally */
+    justify-content: center; /* This ensures content is vertically centered */
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .skill-item i {
     font-size: 2.5em;
     margin-bottom: 10px;
+}
+
+.skill-item p {
+    margin: 0;
+    font-size: 1.2em;
 }
 
 .skill-item:hover {
