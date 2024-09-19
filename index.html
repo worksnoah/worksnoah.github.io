@@ -10,6 +10,7 @@
 
 <body>
     <div class="container">
+        <!-- Hero Section -->
         <section class="hero">
             <div class="hero-content">
                 <h1>Noah Works</h1>
@@ -18,14 +19,16 @@
             </div>
         </section>
 
+        <!-- Navigation -->
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="about.html">About Me</a></li>
                 <li><a href="final_project.html">Final Project</a></li>
             </ul>
         </nav>
 
+        <!-- Main Projects Section -->
         <main id="projects">
             <section class="projects">
                 <div class="project-item"><a href="404.html">Computer Aided Design</a></div>
@@ -44,12 +47,54 @@
             </section>
         </main>
 
+        <!-- Skills Section with Progress Bars -->
+        <section class="skills">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <i class="fas fa-cog"></i>
+                    <p>3D Printing</p>
+                    <div class="skill-bar">
+                        <div class="skill-level" id="3d-printing" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-microchip"></i>
+                    <p>Electronics</p>
+                    <div class="skill-bar">
+                        <div class="skill-level" id="electronics" style="width: 75%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-pencil-ruler"></i>
+                    <p>CAD Design</p>
+                    <div class="skill-bar">
+                        <div class="skill-level" id="cad-design" style="width: 85%;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
         <footer>
-            <p>
-                Connect with me: 
+            <p>Connect with me: 
                 <a href="https://instagram.com/works_noah" target="_blank"><i class="fab fa-instagram"></i></a>
             </p>
         </footer>
     </div>
+
+    <!-- JavaScript for Skill Bar Animation -->
+    <script>
+    window.addEventListener('scroll', function() {
+        const skillBars = document.querySelectorAll('.skill-level');
+        skillBars.forEach(bar => {
+            const barTop = bar.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+            if (barTop < windowHeight - 100) {  // Adjust this value to control when the animation starts
+                bar.style.width = bar.getAttribute('style').split(': ')[1];
+            }
+        });
+    });
+    </script>
 </body>
 </html>

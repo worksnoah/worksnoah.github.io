@@ -175,4 +175,12 @@ nav ul li a:hover {
 }
 
 /* Footer Section */
-footer
+footer {
+    border-top: 1px solid #ffd700;
+    padding: 20px 0;
+    background-color: #0b0b0d;
+}
+
+footer a {
+    margin: 0 10px;
+}
