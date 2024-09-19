@@ -19,7 +19,7 @@ nav ul {
     display: flex;
     justify-content: center;
     padding: 20px;
-    background-color: #363639;
+    background-color: #0b0b0d;
     margin: 0;
 }
 
@@ -105,7 +105,7 @@ nav ul li a:hover {
 
 /* Image in About Section */
 .about-pic {
-    width: 30px; /* Shrink the image */
+    width: 10px; /* Shrink the image */
     border-radius: 25%; /* Optional: keep it round */
     margin-bottom: 20px;
 }
