@@ -4,7 +4,7 @@ body {
     background-color: #0b0b0d; /* Dark background */
     margin: 0;
     padding: 0;
-    color: #ffffff; /* White text */
+    color: #ffffff;
 }
 
 .container {
@@ -13,13 +13,14 @@ body {
     min-height: 100vh;
 }
 
+/* Navigation */
 nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
     padding: 20px;
+    background-color: #111;
     margin: 0;
-    background-color: #111; /* Darker nav bar */
 }
 
 nav ul li {
@@ -28,45 +29,49 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #ffd700; /* Yellow accent */
+    color: #ffd700;
     font-weight: bold;
     font-size: 1.2em;
     transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #ffbf00; /* Slightly brighter yellow */
+    color: #ffbf00;
 }
 
 /* Hero Section */
 .hero {
-    background-color: #0b0b0d; /* Matching dark background */
+    background-color: #0b0b0d;
     color: white;
     text-align: center;
     padding: 100px 20px;
+    height: 60vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 60vh;
+}
+
+.hero-content img.profile-pic {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
 }
 
 .hero h1 {
     font-size: 3em;
-    font-weight: bold;
-    color: #ffd700; /* Yellow title */
-    margin: 0;
+    color: #ffd700;
 }
 
 .hero p {
     font-size: 1.2em;
     margin-top: 10px;
-    color: #ffffff; /* White for subtitle */
 }
 
 .hero-button {
     margin-top: 20px;
-    background-color: #ffd700; /* Yellow button */
-    color: #0b0b0d; /* Dark text on button */
+    background-color: #ffd700;
+    color: #0b0b0d;
     padding: 15px 30px;
     text-transform: uppercase;
     font-weight: bold;
@@ -77,7 +82,65 @@ nav ul li a:hover {
 }
 
 .hero-button:hover {
-    background-color: #ffbf00; /* Slightly lighter yellow */
+    background-color: #ffbf00;
+}
+
+/* About Section */
+.about {
+    padding: 50px;
+    text-align: center;
+    background-color: #0d0d0d;
+}
+
+.about h2 {
+    font-size: 2em;
+    color: #ffd700;
+}
+
+.about p {
+    font-size: 1.2em;
+    color: #ffffff;
+}
+
+/* Skills Section */
+.skills {
+    padding: 50px;
+    background-color: #0b0b0d;
+    text-align: center;
+}
+
+.skills h2 {
+    font-size: 2em;
+    color: #ffd700;
+    margin-bottom: 30px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 20px;
+}
+
+.skill-item {
+    background-color: #111;
+    color: #ffd700;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.skill-item i {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.skill-item:hover {
+    background-color: #ffbf00;
+    color: #0b0b0d;
+    transform: scale(1.05);
 }
 
 /* Projects Section */
@@ -86,12 +149,12 @@ nav ul li a:hover {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
     padding: 50px 20px;
-    background-color: #0d0d0d; /* Slightly lighter background */
+    background-color: #0d0d0d;
 }
 
 .project-item {
-    background-color: #111; /* Dark project boxes */
-    color: #ffd700; /* Yellow text */
+    background-color: #111;
+    color: #ffd700;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
@@ -99,31 +162,10 @@ nav ul li a:hover {
 }
 
 .project-item:hover {
-    background-color: #ffbf00; /* Bright yellow hover */
-    color: #0b0b0d; /* Dark text on hover */
+    background-color: #ffbf00;
+    color: #0b0b0d;
     transform: scale(1.05);
 }
 
-.project-item a {
-    color: inherit;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.1em;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #111;
-    color: #ffd700;
-}
-
-footer a {
-    color: #ffd700;
-    margin-left: 10px;
-}
-
-footer a:hover {
-    color: #ffbf00;
-}
+/* Footer Section */
+footer
