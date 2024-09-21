@@ -6,12 +6,26 @@
     <title>Computer Aided Design</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        .section {
-            padding: 50px;
-            text-align: center;
+        body {
             background-color: #0b0b0d;
-            margin: 20px 0;
             color: #ffffff;
+            font-family: Arial, sans-serif;
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: row; /* Arrange children in a row */
+            justify-content: space-between; /* Space between the two columns */
+            padding: 50px;
+        }
+
+        .section {
+            flex: 1; /* Allow sections to grow and fill available space */
+            margin: 20px;
+            text-align: center;
+            background-color: #1f1f1f; /* Slightly different background for sections */
+            border-radius: 8px;
+            padding: 20px;
         }
 
         .section h2 {
@@ -20,7 +34,7 @@
         }
 
         .section img {
-            width: 50%;
+            width: 80%; /* Adjusted for better sizing */
             height: auto;
             margin: 10px;
             border-radius: 8px;
@@ -31,17 +45,11 @@
             margin-top: 20px;
             text-align: left;
             font-size: 1.2em;
-            max-width: 800px;
+            max-width: 600px;
             margin-left: auto;
             margin-right: auto;
             line-height: 1.6;
             color: #dcdcdc;
-        }
-
-        .logo-section, .final-project-section {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
         }
     </style>
 </head>
@@ -51,7 +59,7 @@
         <section class="section logo-section">
             <h2>Logo</h2>
             <img src="Logo.jpg" alt="Logo Image 1">
-            <img src="Final Logo.jpg" alt="Logo Image 2">
+            <img src="Final_Logo.jpg" alt="Logo Image 2">
             
             <div class="text-section">
                 <h3>About the Logo Design</h3>
@@ -65,9 +73,9 @@
         <!-- Final Project CAD Section -->
         <section class="section final-project-section">
             <h2>Final Project CAD</h2>
-            <img src="First Prototype.jpg" alt="Final Project CAD 1">
-            <img src="Fit Test.jpg" alt="Final Project CAD 2">
-            <img src="Basic Layout.jpg" alt="Final Project CAD 3">
+            <img src="First_Prototype.jpg" alt="Final Project CAD 1">
+            <img src="Fit_Test.jpg" alt="Final Project CAD 2">
+            <img src="Basic_Layout.jpg" alt="Final Project CAD 3">
             
             <div class="text-section">
                 <h3>About the Final Project CAD</h3>
