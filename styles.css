@@ -104,10 +104,15 @@ nav ul li a:hover {
 }
 
 /* Image in About Section */
+/* Image in About Section */
 .about-pic {
-    width: 10px; /* Shrink the image */
-    border-radius: 25%; /* Optional: keep it round */
+    width: 50%; /* Adjust size based on the container */
+    max-width: 300px; /* Prevent the image from being too big */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 25%; /* Keep it round */
     margin-bottom: 20px;
+}
+
 }
 /* Skills Section */
 /* Skills Section */
