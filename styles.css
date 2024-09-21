@@ -41,7 +41,7 @@ nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-    background-color: #200038; /* Dark purple background for hero */
+    background-color: #000000; /* Dark purple background for hero */
     color: white;
     text-align: center;
     padding: 100px 20px;
@@ -89,7 +89,7 @@ nav ul li a:hover {
 .about {
     padding: 50px;
     text-align: center;
-    background-color: #1c0036; /* Slightly darker purple for about section */
+    background-color: #000000; /* Slightly darker purple for about section */
 }
 
 .about h2 {
@@ -115,7 +115,7 @@ nav ul li a:hover {
 /* Skills Section */
 .skills {
     padding: 50px;
-    background-color: #200038; /* Dark purple background */
+    background-color: #000000; /* Dark purple background */
     text-align: center;
 }
 
@@ -132,7 +132,7 @@ nav ul li a:hover {
 }
 
 .skill-item {
-    background-color: #1c0036; /* Darker purple for skill items */
+    background-color: #000000; /* Darker purple for skill items */
     color: #bb86fc; /* Light purple for text */
     padding: 20px;
     border-radius: 10px;
@@ -165,11 +165,11 @@ nav ul li a:hover {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
     padding: 50px 20px;
-    background-color: #1c0036; /* Dark purple for projects background */
+    background-color: #000000; /* Dark purple for projects background */
 }
 
 .project-item {
-    background-color: #200038; /* Darker purple for project items */
+    background-color: #000000; /* Darker purple for project items */
     color: #bb86fc; /* Light purple for text */
     padding: 20px;
     border-radius: 10px;
@@ -187,7 +187,7 @@ nav ul li a:hover {
 footer {
     border-top: 1px solid #bb86fc; /* Light purple border */
     padding: 20px 0;
-    background-color: #200038; /* Dark purple background */
+    background-color: #000000; /* Dark purple background */
 }
 
 footer a {
