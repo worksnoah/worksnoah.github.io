@@ -19,7 +19,7 @@ nav ul {
     display: flex;
     justify-content: center;
     padding: 20px;
-    background-color: #e5c2f0; /* Dark purple for navbar background */
+    background-color: #000000; /* Dark purple for navbar background */
     margin: 0;
 }
 
@@ -36,7 +36,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #9a4dcc; /* Darker purple for hover effect */
+    color: #bb86fc; /* Darker purple for hover effect */
 }
 
 /* Hero Section */
@@ -82,7 +82,7 @@ nav ul li a:hover {
 }
 
 .hero-button:hover {
-    background-color: #9a4dcc; /* Darker purple for button hover */
+    background-color: #bb86fc; /* Darker purple for button hover */
 }
 
 /* About Section */
