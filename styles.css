@@ -19,7 +19,7 @@ nav ul {
     display: flex;
     justify-content: center;
     padding: 20px;
-    background-color: #000000; /* Dark purple for navbar background */
+    background-color: #000000; /* Dark background for navbar */
     margin: 0;
 }
 
@@ -41,7 +41,7 @@ nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-    background-color: #000000; /* Dark purple background for hero */
+    background-color: #000000; /* Dark background for hero */
     color: white;
     text-align: center;
     padding: 100px 20px;
@@ -71,7 +71,7 @@ nav ul li a:hover {
 .hero-button {
     margin-top: 20px;
     background-color: #bb86fc; /* Light purple button */
-    color: #000000; /* Darker purple for text */
+    color: #000000;
     padding: 15px 30px;
     text-transform: uppercase;
     font-weight: bold;
@@ -89,12 +89,12 @@ nav ul li a:hover {
 .about {
     padding: 50px;
     text-align: center;
-    background-color: #000000; /* Slightly darker purple for about section */
+    background-color: #000000;
 }
 
 .about h2 {
     font-size: 2em;
-    color: #000000; /* Light purple for headings */
+    color: #bb86fc;
 }
 
 .about p {
@@ -105,14 +105,18 @@ nav ul li a:hover {
 
 /* Image in About Section */
 .about-pic {
-    width: 50%; /* Adjust size based on the container */
-    max-width: 300px; /* Prevent the image from being too big */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 25%; /* Keep it round */
+    width: 50%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 25%;
     margin-bottom: 20px;
 }
 
 /* Skills Section */
+main {
+    flex: 1;
+}
+
 .skills {
     display: flex;
     flex-direction: column;
@@ -125,7 +129,7 @@ nav ul li a:hover {
 
 .skills h2 {
     font-size: 2em;
-    color: #bb86fc; /* Light purple for headings */
+    color: #bb86fc;
     margin-bottom: 30px;
 }
 
@@ -135,18 +139,18 @@ nav ul li a:hover {
     gap: 20px;
     justify-content: center; /* Ensure the grid is centered horizontally */
     width: 100%;
-    max-width: 1000px; /* Max width to control grid stretch */
+    max-width: 1000px;
 }
 
 .skill-item {
-    background-color: #000000; /* Darker purple for skill items */
-    color: #bb86fc; /* Light purple for text */
+    background-color: #1a1a1a;
+    color: #bb86fc;
     padding: 20px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    align-items: center; /* This centers the icons and text horizontally */
-    justify-content: center; /* This ensures content is vertically centered */
+    align-items: center;
+    justify-content: center;
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
@@ -161,8 +165,8 @@ nav ul li a:hover {
 }
 
 .skill-item:hover {
-    background-color: #bb86fc; /* Darker purple for hover effect */
-    color: #200038; /* Dark background for text */
+    background-color: #bb86fc;
+    color: #200038;
     transform: scale(1.05);
 }
 
@@ -172,12 +176,12 @@ nav ul li a:hover {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
     padding: 50px 20px;
-    background-color: #000000; /* Dark purple for projects background */
+    background-color: #000000;
 }
 
 .project-item {
-    background-color: #000000; /* Darker purple for project items */
-    color: #bb86fc; /* Light purple for text */
+    background-color: #1a1a1a;
+    color: #bb86fc;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
@@ -185,24 +189,25 @@ nav ul li a:hover {
 }
 
 .project-item:hover {
-    background-color: #bb86fc; /* Darker purple for hover effect */
-    color: #200038; /* Dark background for text */
+    background-color: #bb86fc;
+    color: #200038;
     transform: scale(1.05);
 }
 
 /* Footer Section */
 footer {
-    border-top: 1px solid #bb86fc; /* Light purple border */
+    border-top: 1px solid #bb86fc;
     padding: 20px 0;
-    background-color: #000000; /* Dark purple background */
+    background-color: #000000;
+    text-align: center;
 }
 
 footer a {
     margin: 0 10px;
-    color: #bb86fc; /* Light purple links */
+    color: #bb86fc;
     text-decoration: none;
 }
 
 footer a:hover {
-    color: #bb86fc; /* Darker purple for hover effect */
+    color: #bb86fc;
 }
