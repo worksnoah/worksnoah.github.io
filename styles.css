@@ -114,9 +114,13 @@ nav ul li a:hover {
 
 /* Skills Section */
 .skills {
-    padding: 50px;
-    background-color: #000000; /* Dark purple background */
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* Vertically center the content */
+    align-items: center;      /* Horizontally center the content */
+    margin-top: auto;         /* Push the section to the bottom of the page */
+    padding-bottom: 50px;     /* Add some padding at the bottom */
+    background-color: #000000;
 }
 
 .skills h2 {
@@ -127,8 +131,11 @@ nav ul li a:hover {
 
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Adjust based on screen size */
     gap: 20px;
+    justify-content: center; /* Ensure the grid is centered horizontally */
+    width: 100%;
+    max-width: 1000px; /* Max width to control grid stretch */
 }
 
 .skill-item {
