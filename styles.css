@@ -154,7 +154,7 @@ nav ul li a:hover {
 }
 
 .skill-item:hover {
-    background-color: #9a4dcc; /* Darker purple for hover effect */
+    background-color: #bb86fc; /* Darker purple for hover effect */
     color: #200038; /* Dark background for text */
     transform: scale(1.05);
 }
@@ -178,7 +178,7 @@ nav ul li a:hover {
 }
 
 .project-item:hover {
-    background-color: #9a4dcc; /* Darker purple for hover effect */
+    background-color: #bb86fc; /* Darker purple for hover effect */
     color: #200038; /* Dark background for text */
     transform: scale(1.05);
 }
@@ -197,5 +197,5 @@ footer a {
 }
 
 footer a:hover {
-    color: #9a4dcc; /* Darker purple for hover effect */
+    color: #bb86fc; /* Darker purple for hover effect */
 }
