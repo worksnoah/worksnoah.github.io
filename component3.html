@@ -4,23 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Component 3: Solution Design</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your main CSS file -->
     <style>
+        /* Dark mode styling */
         body {
             background-color: black;
             color: white;
+            font-family: Arial, sans-serif;
         }
 
-        nav ul li a {
-            color: #ae00ff;
+        /* Table styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
         }
 
-        nav ul li a:hover {
-            color: #6f00ff;
+        th, td {
+            border: 1px solid #ffffff;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #333;
         }
     </style>
 </head>
 <body>
+    <!-- Navigation -->
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -29,33 +41,110 @@
         </ul>
     </nav>
 
+    <!-- Header -->
     <header>
         <h1>Component 3: Solution Design</h1>
     </header>
 
+    <!-- Main Content -->
     <main>
-        <section>
-            <h4>Project Requirements</h4>
+        <!-- Overview of Solution Design -->
+        <section class="solution-overview">
+            <h2>Solution Overview</h2>
+            <p>In this phase of the project, the objective is to design a solution that addresses the critical issues faced by vessels operating in remote areas without internet connectivity. The proposed solution is a ruggedized, portable device that provides GPS and essential offline resources to aid in navigation and emergency situations.</p>
+        </section>
+
+        <!-- Project Requirements -->
+        <section class="project-requirements">
+            <h2>Project Requirements</h2>
             <ul>
-                <li>Magnetic USB-C ports to make connections more secure and durable, reducing wear and tear.</li>
-                <li>A built-in tool drawer will be included for easy access to essential tools, making repairs or adjustments more convenient.</li>
-                <li>A rugged button will be implemented to switch between screens, allowing for a simple and reliable user interface in harsh environments.</li>
-                <li>The battery pack will be swappable, with one magnetic plug, to enable quick and easy battery replacement while maintaining a secure connection.</li>
-                <li>The interior will provide dedicated storage for small tools, ensuring that they remain accessible and organized during transport.</li>
-                <li>An exhaust fan will be installed to prevent overheating and ensure stable performance during extended use.</li>
-                <li>A physical library of SD card operating systems will be integrated to facilitate switching between different system environments offline.</li>
-                <li>The battery life will support 24 hours of continuous use, ensuring the device remains operational for long periods without recharging.</li>
-                <li>The device will be waterproof when the container is closed, and the internal components will be water-resistant to handle exposure to moisture.</li>
-                <li>The case will float on water, preventing the device from sinking if dropped overboard or in water environments.</li>
-                <li>A secondary cursor input method will be included besides the touchscreen, allowing for more flexibility in input options.</li>
-                <li>A dedicated drawer or container will be built for SD card storage, providing easy access and organization.</li>
-                <li>A fast-charge USB-C cable with a retractable mechanism will be used for input/output, allowing for quick and efficient charging.</li>
-                <li>The device will feature a full-size mechanical keyboard for enhanced typing comfort and durability, even in harsh environments.</li>
-                <li>Built-in speakers will provide audio output for media playback or system notifications, ensuring full functionality without external devices.</li>
+                <li><strong>Durability:</strong> The device must withstand rough handling and harsh conditions.</li>
+                <li><strong>Offline Capability:</strong> The device should operate independently of internet access.</li>
+                <li><strong>Portability:</strong> Compact and easy to transport.</li>
+                <li><strong>Battery Life:</strong> Long-lasting battery to support extended use without charging.</li>
+                <li><strong>Functionality:</strong> Includes essential features like GPS, a library of maps, and offline Wikipedia access.</li>
             </ul>
+        </section>
+
+        <!-- Decision Matrix Section Placeholder -->
+        <section class="decision-matrix">
+            <h2>Decision Matrix</h2>
+            <table border="0" cellpadding="0" cellspacing="0" id="sheet0" class="sheet0 gridlines">
+                <col class="col0">
+                <col class="col1">
+                <col class="col2">
+                <col class="col3">
+                <col class="col4">
+                <tbody>
+                  <tr class="row0">
+                    <td class="column0 style1 s">Parameter</td>
+                    <td class="column1 style2 s">Compact Build</td>
+                    <td class="column2 style2 s">Score</td>
+                    <td class="column3 style2 s">Larger Build</td>
+                    <td class="column4 style2 s">Score</td>
+                  </tr>
+                  <tr class="row1">
+                    <td class="column0 style3 s">Decision Matrix</td>
+                    <td class="column1 style3 null"></td>
+                    <td class="column2 style3 null"></td>
+                    <td class="column3 style3 null"></td>
+                    <td class="column4 style3 null"></td>
+                  </tr>
+                  <tr class="row2">
+                    <td class="column0 style3 s">Portability</td>
+                    <td class="column1 style3 s">Highly portable. The compact setup fits easily into a backpack and is convenient for travel, as shown in the train photo.</td>
+                    <td class="column2 style3 n">10</td>
+                    <td class="column3 style3 s">Bulkier, with a larger screen, keyboard, and solar panel. Less convenient to carry and would need a larger bag or case.</td>
+                    <td class="column4 style3 n">4</td>
+                  </tr>
+                  <tr class="row3">
+                    <td class="column0 style3 s">Battery Life</td>
+                    <td class="column1 style3 s">Smaller battery gives around 2-3 hours of use, which works for shorter tasks but isn’t ideal for long sessions without charging.</td>
+                    <td class="column2 style3 n">6</td>
+                    <td class="column3 style3 s">The 70,000mAh battery and solar panel provide extended battery life, around 6-8 hours or more, ideal for prolonged use.</td>
+                    <td class="column4 style3 n">10</td>
+                  </tr>
+                  <tr class="row4">
+                    <td class="column0 style3 s">Price</td>
+                    <td class="column1 style3 s">Total cost is around $200, keeping it relatively affordable with fewer components.</td>
+                    <td class="column2 style3 n">9</td>
+                    <td class="column3 style3 s">Higher cost due to large battery, full-size keyboard, and solar panel. Around $500 total for added functionality.</td>
+                    <td class="column4 style3 n">6</td>
+                  </tr>
+                  <tr class="row5">
+                    <td class="column0 style3 s">Modularity</td>
+                    <td class="column1 style3 s">Limited flexibility because of the compact build. Not much room for extra parts without reworking the layout, as shown by the tight cable management.</td>
+                    <td class="column2 style3 n">5</td>
+                    <td class="column3 style3 s">The larger build allows for more flexibility to add or swap components, like upgrading the battery or changing the screen and keyboard.</td>
+                    <td class="column4 style3 n">8</td>
+                  </tr>
+                  <tr class="row6">
+                    <td class="column0 style3 s">Ease of Use</td>
+                    <td class="column1 style3 s">The small touchscreen and folding keyboard are adequate for quick tasks, though they might feel cramped during longer sessions.</td>
+                    <td class="column2 style3 n">7</td>
+                    <td class="column3 style3 s">Full-size keyboard and 10-inch screen make it more comfortable for extended work or complex tasks like coding.</td>
+                    <td class="column4 style3 n">9</td>
+                  </tr>
+                  <tr class="row7">
+                    <td class="column0 style3 s">Screen &amp; Keyboard Size</td>
+                    <td class="column1 style3 s">The small screen and compact keyboard work for basic tasks but may be limiting for tasks needing more screen space.</td>
+                    <td class="column2 style3 n">6</td>
+                    <td class="column3 style3 s">Larger screen and full-size keyboard offer a more comfortable setup, better for detailed work and multitasking.</td>
+                    <td class="column4 style3 n">10</td>
+                  </tr>
+                  <tr class="row8">
+                    <td class="column0 style3 s">Durability</td>
+                    <td class="column1 style3 s">Compact and well-protected in a rugged case with foam padding, suitable for travel and handling light impacts.</td>
+                    <td class="column2 style3 n">8</td>
+                    <td class="column3 style3 s">The rugged case provides good protection, but the additional components (dual screens, solar panel) introduce more potential vulnerabilities.</td>
+                    <td class="column4 style3 n">7</td>
+                  </tr>
+                </tbody>
+              </table>
         </section>
     </main>
 
+    <!-- Footer -->
     <footer>
         <p>&copy; 2024 My Portfolio</p>
     </footer>
