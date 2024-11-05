@@ -66,23 +66,30 @@
             margin-bottom: 20px;
         }
 
-        /* Image Gallery */
+        /* Image Gallery in Two Columns */
         .image-gallery {
             display: grid;
-            grid-template-columns: 1fr;
+            grid-template-columns: 1fr 1fr; /* Two columns */
             gap: 20px;
+            align-items: start;
+            text-align: left; /* Align descriptions to the left */
         }
 
-        .image-gallery img {
-            width: 100%;
-            height: auto;
-            border: 2px solid #bb86fc; /* Light purple border */
+        .circuit-item {
+            border: 2px solid #bb86fc;
             border-radius: 8px;
+            padding: 10px;
             transition: transform 0.3s ease;
         }
 
-        .image-gallery img:hover {
+        .circuit-item:hover {
             transform: scale(1.05); /* Slight zoom on hover */
+        }
+
+        .circuit-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
         }
 
         /* Footer */
@@ -118,20 +125,24 @@
         <h1>Electronics Design</h1>
         <p>Explore my work in electronics, showcasing intricate circuit designs, PCB layouts, and soldering techniques that highlight my attention to detail and technical proficiency.</p>
 
-    <!-- Example of Circuit 1 -->
-    <div class="circuit-item">
-        <img src="images/Circuit2.jpg" alt="Circuit 1 Description">
-        <p>
-            In this simple circuit, I control an LED's on/off state with minimal components. I designed it to demonstrate the basics of LED operation, focusing on how current flows to produce light. It's a straightforward setup, perfect for showcasing fundamental electronics principles.
-        </p>
-    </div>
+        <!-- Image Gallery with Side-by-Side Layout -->
+        <div class="image-gallery">
+            <!-- Circuit 1 -->
+            <div class="circuit-item">
+                <img src="images/Circuit2.jpg" alt="Circuit 1">
+                <p>
+                    In this simple circuit, I control an LED's on/off state with minimal components. I designed it to demonstrate the basics of LED operation, focusing on how current flows to produce light. It's a straightforward setup, perfect for showcasing fundamental electronics principles.
+                </p>
+            </div>
 
-    <!-- Example of Circuit 2 -->
-    <div class="circuit-item">
-        <img src="images/Circuit1.jpg" alt="Circuit 2 Description">
-        <p>
-            This circuit also controls an LED, but I added a switch to easily toggle the light on and off. I kept the design simple to focus on how components like switches interact with LEDs, making it ideal for beginners learning about basic electrical circuits.
-        </p>
+            <!-- Circuit 2 -->
+            <div class="circuit-item">
+                <img src="images/Circuit1.jpg" alt="Circuit 2">
+                <p>
+                    This circuit also controls an LED, but I added a switch to easily toggle the light on and off. I kept the design simple to focus on how components like switches interact with LEDs, making it ideal for beginners learning about basic electrical circuits.
+                </p>
+            </div>
+        </div>
     </div>
 
     <footer>
