@@ -87,7 +87,7 @@ nav ul li a:hover {
 
 /* Component 3 Images - Specific Targeting */
 .component-3 .update-image {
-    width: 50%; /* Shrink images to 50% width of their container */
+    width: 30%; /* Shrink images to 50% width of their container */
     height: auto; /* Maintain aspect ratio */
     border: 4px solid #bb86fc; /* Add a purple border */
     border-radius: 8px; /* Slightly round the corners */
